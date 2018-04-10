@@ -6,11 +6,11 @@ body {
   opacity: 0.9;
   margin: 0;
   padding: 0;
+
 }
                                     /*Header*/
 header {
   display: flex;
-  flex-direction: row;
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
@@ -18,11 +18,15 @@ header {
   top: 0px;
   background-color: black;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
+}
+li {
+  display: inline;
+
 }
 nav {
   position: relative;
-  left: 750px;
+  left: 700px;
   display: inline-block;
 
 }
@@ -32,88 +36,100 @@ nav {
 .logo img {
   height: 50px;
   padding-left: 10px;
-
+  padding-top: 10px;
 }
                                     /*main content*/
 .content {
-
+text-align: center;
+z-index: 1;
 }
                                     /*mission*/
 
-.our-mission {
+#mission {
   width: 1200px;
   height: 700px;
   margin: 0 auto;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
+  display: block;
+  background-position: center;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
 
 }
-.mission {
- position: relative;
- top: 300px;
- flex-basis: 1200px;
+.our-mission {
+  position: relative;
+  top: 320px;
+  width: 1200px;
+  height: 73px;
+  background-color: black;
+  padding-top: 5px;
+}
+.descriptors {
+  position: relative;
+  top: 320px;
+  width: 1200px;
+
 }
 h2, h4 {
   background-color: black;
 }
+h2 {
+  margin-top: 10px;
+
+}
+
+#mission h4 {
+  position: relative;
+  bottom: 30px;
+}
                                     /*tea of the month*/
-.teas {
+#featured-teas {
   display: inline-block;
   width:1000px;
-  height: auto;
-  flex-wrap: wrap;
   padding: 50px;
 }
+
 .berry, .rum, .myrtle, .donut, .bizarre {
   height: 200px;
   width: 300px;
+  margin: 0px 15px;
 }
-.title {
-position: relative;
-left: 500px;
-}
-.steeping {
-  position: relative;
-  left: 460px;
-}
+
 .firstrowimg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 70px;
+  padding-left: 10px;
   position: relative;
-  left: 40px;
+  left: 10px;
 }
 .firstrownames {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 70px;
-  position: relative;
-  left: 100px;
+  padding-left: 10px;
+
 }
 .secondrowimg {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-left: 70px;
+  padding-left: 50px;
   position: relative;
-  bottom: 170px;
-  left: 60px;
+  bottom: 150px;
+  left: 115px;
+  width: 670px;
 }
 .secondrownames {
   display:flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-left: 70px;
+  justify-content: space-between;
+
   position: relative;
-  bottom: 170px;
-  left: 120px;
+  bottom: 150px;
+  width: 600px;
+  left: 200px;
 }
                                     /*locations*/
-.locations {
+#locations {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
   height: 600px;
   width: 1200px;
@@ -121,19 +137,20 @@ left: 500px;
   align-items: center;
   margin: 40px;
   position: relative;
-  bottom: 400px;
+  bottom: 350px;
 }
 .columns {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-right: 100px;
-
+  position: relative;
+  bottom: 30px;
 }
 .title2 {
   position: relative;
-  left: 550px;
-  top: 50px;
+  left: 530px;
+  top: 40px;
   max-width: 0px;
 }
 .city, .address, .room, .state {
@@ -142,8 +159,8 @@ left: 500px;
   position: relative;
   top: 5px;
 }
-                                        /*column 1*/
-.firstcolumn {
+                                        /*columns*/
+.firstcolumn, .secondcolumn, .thirdcolumn {
   position: relative;
   top: 80px;
   left: 60px;
@@ -151,43 +168,18 @@ left: 500px;
   width: 300px;
   height: 300px;
 }
-                                        /*column 2*/
-.secondcolumn {
-  position: relative;
-  top: 80px;
-  left: 60px;
-  background-color: black;
-  width: 300px;
-  height: 300px;
-}
-                                        /*column 3*/
-.thirdcolumn {
-  position: relative;
-  top: 80px;
-  left: 60px;
-  background-color: black;
-  width: 300px;
-  height: 300px;
-}
+
                                     /*contact info*/
 .contact {
   display: inline-block;
   height: 200px;
   position: relative;
-  left: 540px;
-  bottom: 450px;
+  bottom: 390px;
 }
-.email {
-  position: relative;
-  right: 5px;
-}
-.phone {
-  position: relative;
-  left: 50px;
-}
+
                                     /*footer*/
 .footer {
-  margin-left: 20px;
-  position: relative;
-  bottom: 450px;
+ margin: 20px;
+
+
 }
