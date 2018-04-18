@@ -20,19 +20,23 @@ header {
   align-items: center;
   z-index: 2;
 }
+
 li {
   display: inline;
 
 }
+
 nav {
   position: relative;
   left: 700px;
-  display: inline-block;
-
+  display: flex;
+  justify-content: center;
 }
+
 .logo{
   display: flex;
 }
+
 .logo img {
   height: 50px;
   padding-left: 10px;
@@ -54,6 +58,7 @@ z-index: 1;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
 
 }
+
 .our-mission {
   position: relative;
   top: 320px;
@@ -62,18 +67,20 @@ z-index: 1;
   background-color: black;
   padding-top: 5px;
 }
+
 .descriptors {
   position: relative;
   top: 320px;
   width: 1200px;
 
 }
+
 h2, h4 {
   background-color: black;
 }
+
 h2 {
   margin-top: 10px;
-
 }
 
 #mission h4 {
@@ -85,6 +92,7 @@ h2 {
   display: inline-block;
   width:1000px;
   padding: 50px;
+
 }
 
 .berry, .rum, .myrtle, .donut, .bizarre {
@@ -106,7 +114,6 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 10px;
-
 }
 .secondrowimg {
   display: flex;
@@ -122,7 +129,6 @@ h2 {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-
   position: relative;
   bottom: 150px;
   width: 600px;
@@ -139,6 +145,7 @@ h2 {
   position: relative;
   bottom: 350px;
 }
+
 .columns {
   display: flex;
   flex-direction: row;
@@ -147,12 +154,14 @@ h2 {
   position: relative;
   bottom: 30px;
 }
+
 .title2 {
   position: relative;
   left: 530px;
   top: 40px;
   max-width: 0px;
 }
+
 .city, .address, .room, .state {
   display: flex;
   justify-content: space-around;
@@ -168,7 +177,6 @@ h2 {
   width: 300px;
   height: 300px;
 }
-
                                     /*contact info*/
 .contact {
   display: inline-block;
@@ -176,10 +184,7 @@ h2 {
   position: relative;
   bottom: 390px;
 }
-
                                     /*footer*/
 .footer {
  margin: 20px;
-
-
 }
